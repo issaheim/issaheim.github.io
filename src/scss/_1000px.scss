@@ -1,0 +1,98 @@
+main{
+  padding-top: 30vh;
+}
+// ----------------------------------------------------------------------
+// ---------------------------------- START PAGE ------------------------
+// ----------------------------------------------------------------------
+.issa{
+  .issa__letter{
+    transform: scale(0.9);
+    &:hover{
+      transform: scale(.95);
+    }
+  }
+  .issa--i{
+    left: 16vw;   
+  }
+  .issa--s{
+    top: 11vh;
+    right: 27vw;
+  }
+  .issa--ss{
+    left: 32vw;
+    bottom: 26vh;
+  }
+  .issa--a{
+    bottom: 12vh;
+    right: 17vw;
+  }
+}
+
+// ----------------------------------------------------------------------
+// ------------------------------- PORTFOLIO PAGE -----------------------
+// ----------------------------------------------------------------------
+.portfolio-page main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.project{
+  flex-direction: row;
+  position: relative;
+  height: 30%;
+  margin: 0.5vw;
+  width: 35vw;
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .project__overlay{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  &:hover .project__overlay, &:focus .project__overlay{
+    opacity: 1;
+  }
+  .project__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.project--grid{
+  order: 1;
+}
+.project--lolla{
+  order: 6;
+}
+.project--finn{
+  order: 4;
+  align-self: flex-start;
+}
+.project--salto{
+  order: 3;
+}
+.project--tallbarret{
+  order: 2;
+}
+.project--brus{
+  order: 1;
+}

@@ -1,0 +1,21 @@
+.resume-page{
+  main{
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  section{
+    max-width: 650px; 
+    margin: 0 auto;
+  }
+  article{
+    margin-bottom: 2rem;
+  }
+  p{
+    color: $darkgrey;
+  }
+  ul{
+    @include no-list-style;
+  }
+}
+

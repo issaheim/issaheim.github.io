@@ -1,0 +1,47 @@
+
+
+// ----------------------------------------------------------------------
+// ---------------------------------- START PAGE ------------------------
+// ----------------------------------------------------------------------
+.issa{
+  .issa__letter{
+    transform: scale(1);
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------
+// ------------------------------- PORTFOLIO PAGE -----------------------
+// ----------------------------------------------------------------------
+.project--grid{
+  width: 22vw;
+  left: 2.5vw;
+  align-self: flex-end;
+}
+.project--lolla{
+  width: 22vw;
+  top: 8vh;
+  left: 5vw;
+  align-self: flex-start;
+}
+.project--finn{
+  width: 27vw;
+  right: 2.5vw;
+}
+.project--salto{
+  width: 28vw;
+  right: 2.5vw;
+  align-self: flex-start;
+}
+.project--tallbarret{
+  width: 28vw;
+  left: 2.5vw;
+  align-self: flex-end;
+}
+.project--brus{
+  width: 21vw;
+  left: 2.5vw;
+  align-self: flex-end;
+}

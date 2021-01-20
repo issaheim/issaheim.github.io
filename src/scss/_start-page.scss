@@ -1,0 +1,100 @@
+.start-page{
+  // Fallback
+  background: rgb(251,232,199);
+
+  // Gradient with noise
+  background: -moz-linear-gradient(
+    228deg, 
+    rgba(251,232,199,1) 0%, 
+    rgba(231,173,207,1) 22%, 
+    rgba(203,233,253,1) 63%, 
+    rgba(253,195,222,1) 80%, 
+    rgba(253,219,194,1) 100%);
+  
+  background: -webkit-linear-gradient(
+    228deg, 
+    rgba(251,232,199,1) 0%, 
+    rgba(231,173,207,1) 22%, 
+    rgba(203,233,253,1) 63%, 
+    rgba(253,195,222,1) 80%, 
+    rgba(253,219,194,1) 100%);
+
+  background: linear-gradient(
+    228deg, 
+    rgba(251,232,199,1) 0%, 
+    rgba(231,173,207,1) 22%, 
+    rgba(203,233,253,1) 63%, 
+    rgba(253,195,222,1) 80%, 
+    rgba(253,219,194,1) 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbe8c7",endColorstr="#fddbc2",GradientType=1);
+
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: change 20s ease infinite;
+
+  @keyframes change{
+    0%{
+      background-position: 0 50%;
+    } 
+    50%{
+      background-position: 100% 0%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .logo{
+    display: none;
+  }
+
+  main{
+    padding-top: 0;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.issa{
+  position: absolute;
+  @include fullscreen;
+  .issa__letter{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    background: url('../img/issa-letters.svg');
+    background-size: 573px 301px;
+    transform: scale(.7);
+    transition: .3s ease;
+    &:hover{
+      transform: scale(.75);
+    }
+  }
+  .issa--i{
+    background-position: 0 0;
+    top: 2px;
+    left: 1vw;   
+  }
+  .issa--s{
+    background-position: -180px 0;
+    top: 11vh;
+    right: 6vw;
+  }
+  .issa--ss{
+    background-position: -180px 0;
+    bottom: 27vh;
+    left: 11vw;
+  }
+  .issa--a{
+    background-position: -370px 0;
+    bottom: 7vh;
+    right: 10vw;
+  }
+}
+

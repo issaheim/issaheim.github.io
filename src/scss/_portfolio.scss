@@ -1,0 +1,67 @@
+.portfolio-page main {
+  padding-top: 0;
+  img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+  h2{
+    font-family: 'Knewave', cursive;
+    font-size: 1.6rem;
+  }
+}
+
+.project{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8vw;
+  .project__overlay{
+    bottom: 6vw;
+    width: 80%;
+    padding: 4vw;
+    position: relative;
+  }
+  .project__text{
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    p{
+        margin-bottom: 0;
+    }
+  }
+
+  &.project--grid{
+    .project__overlay{
+      background-color: $darkpink;
+    }
+  }
+  &.project--lolla{
+    .project__overlay{
+      background-color: $lightpink;
+    }
+  }
+  &.project--finn{
+    .project__overlay{
+      background-color: $darkgrey;
+    }
+  }
+  &.project--salto{
+    .project__overlay{
+      background-color: $orange;
+    }
+  }
+  &.project--tallbarret{
+    .project__overlay{
+      background-color: $tealgreen;
+    }
+  }
+  &.project--brus{
+    .project__overlay{
+      background-color: $darkgrey;
+    }
+  } 
+}
+
+

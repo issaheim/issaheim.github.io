@@ -1,0 +1,17 @@
+@mixin fullscreen{
+  min-height: 100vh;
+  width: 100vw;
+}
+
+@mixin no-list-style{
+  list-style-type: none;
+  padding: 0;
+}
+
+$blue: #162F98;
+$orange: #C65306;
+$darkgrey: #202020;
+$darkpink: #CD474E;
+$lightpink: #B25367;
+$tealgreen: #007167;
+
